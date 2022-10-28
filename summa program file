@@ -21,6 +21,9 @@ public class Main {
         driver.navigate().to("http://www.www.www");
         Thread.sleep(2000);
         driver.navigate().back();
+        
+        
+        *****************Thankyou for wasting your time*********************
 
 
 
