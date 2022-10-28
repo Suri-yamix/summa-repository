@@ -1,0 +1,28 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import java.lang.*;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("http://www.www.www/");
+        driver.manage().window().maximize();
+        Thread.sleep(800);
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("computers");
+        driver.findElement(By.id("nav-search-submit-button")).click();
+        driver.findElement(By.linkText("HP")).click();
+        driver.findElement(By.linkText("AMD")).click();
+        driver.findElement(By.linkText("Today's Deals")).click();
+        driver.navigate().to("http://www.www.www");
+        Thread.sleep(2000);
+        driver.navigate().back();
+
+
+
+    }
+}
